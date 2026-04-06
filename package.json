@@ -1,7 +1,7 @@
 {
   "name": "@revivejs/vue-google-maps",
-  "version": "2.0.0",
-  "description": "A maintained Vue 2 wrapper for the Google Maps JavaScript API with versioned docs, advanced markers, marker clustering, and migration-friendly components.",
+  "version": "3.0.0",
+  "description": "A maintained Vue 3 wrapper for the Google Maps JavaScript API with versioned docs, advanced markers, marker clustering, and migration-friendly components.",
   "keywords": [
     "vue",
     "vue-library",
@@ -55,7 +55,7 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "vue": ">=2.7.0 <3.0.0"
+    "vue": ">=3.0.0 <4.0.0"
   },
   "dependencies": {
     "@googlemaps/markerclusterer": "2.6.2",

@@ -1,6 +1,6 @@
 # @revivejs/vue-google-maps
 
-> A maintained Vue 2 wrapper for the Google Maps JavaScript API with versioned demos, advanced markers, marker clustering, shapes, layers, directions, and geocoding.
+> A maintained Vue 3 wrapper for the Google Maps JavaScript API with versioned demos, advanced markers, marker clustering, shapes, layers, directions, and geocoding.
 
 [![npm version](https://img.shields.io/npm/v/@revivejs/vue-google-maps.svg?style=flat-square)](https://www.npmjs.com/package/@revivejs/vue-google-maps)
 [![npm downloads](https://img.shields.io/npm/dt/@revivejs/vue-google-maps.svg?style=flat-square)](https://www.npmjs.com/package/@revivejs/vue-google-maps)
@@ -9,7 +9,7 @@
 
 **[Documentation & Live Demos](https://alexandroit.github.io/vue-google-maps/)** | **[npm](https://www.npmjs.com/package/@revivejs/vue-google-maps)** | **[Issues](https://github.com/alexandroit/vue-google-maps/issues)** | **[Repository](https://github.com/alexandroit/vue-google-maps)**
 
-**Latest version:** `2.0.0`
+**Latest version:** `3.0.0`
 
 ## Why this library?
 
@@ -26,6 +26,7 @@ That keeps Vue in charge of templates and reactivity while preserving the full G
 
 | Package version | Vue line | Demo link |
 | :---: | :---: | :--- |
+| **3.0.0** | **Vue 3.5.x** | [Vue 3 demo](https://alexandroit.github.io/vue-google-maps/vue-3/) |
 | **2.0.0** | **Vue 2.7.x** | [Vue 2 demo](https://alexandroit.github.io/vue-google-maps/vue-2/) |
 
 ## Installation
@@ -127,6 +128,10 @@ this.$refs.mainMarker.setPosition({ lat: 43.6532, lng: -79.3832 });
 ```
 
 ## Changelog
+
+### 3.0.0
+- Promoted the package line to Vue 3 as the maintained latest release
+- Kept the same wrapper surface and versioned docs structure
 
 ### 2.0.0
 - Initial Vue Google Maps wrapper line
