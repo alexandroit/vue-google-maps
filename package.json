@@ -1,0 +1,70 @@
+{
+  "name": "@revivejs/vue-google-maps",
+  "version": "2.0.0",
+  "description": "A maintained Vue 2 wrapper for the Google Maps JavaScript API with versioned docs, advanced markers, marker clustering, and migration-friendly components.",
+  "keywords": [
+    "vue",
+    "vue-library",
+    "google-maps",
+    "google-maps-javascript-api",
+    "maps",
+    "advanced-marker",
+    "markerclusterer",
+    "directions",
+    "geocoder",
+    "vue-google-maps",
+    "wrapper",
+    "ui-component",
+    "revived",
+    "maintained"
+  ],
+  "homepage": "https://alexandroit.github.io/vue-google-maps/",
+  "bugs": {
+    "url": "https://github.com/alexandroit/vue-google-maps/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexandroit/vue-google-maps.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist docs/vue-2 docs/vue-3",
+    "docs:install:vue-2": "cd docs-src/vue-2 && npm install",
+    "docs:install:vue-3": "cd docs-src/vue-3 && npm install",
+    "build:docs:vue-2": "cd docs-src/vue-2 && npm run build",
+    "build:docs:vue-3": "cd docs-src/vue-3 && npm run build",
+    "build:docs": "npm run build:docs:vue-3",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "vue": ">=2.7.0 <3.0.0"
+  },
+  "dependencies": {
+    "@googlemaps/markerclusterer": "2.6.2",
+    "vue-demi": "0.14.10"
+  },
+  "devDependencies": {
+    "@types/google.maps": "3.58.1",
+    "tsup": "8.5.1",
+    "typescript": "5.9.3",
+    "vue": "3.5.32"
+  }
+}
