@@ -1,0 +1,18 @@
+{
+  "packageName": "@stackline/vue-google-maps",
+  "projectRoot": "vue-google-maps/vue-google-maps",
+  "framework": "vue",
+  "family": "vue-2",
+  "major": 2,
+  "exactVersion": "2.0.2",
+  "installMode": "npm-install",
+  "localInstallSource": "../../..",
+  "expectedExports": [
+    "default",
+    "GoogleMap"
+  ],
+  "installCommand": "npm install --ignore-scripts",
+  "validateCommand": "npm run validate",
+  "buildCommand": "npm run build",
+  "generatedAt": "2026-04-08T22:13:16.792Z"
+}

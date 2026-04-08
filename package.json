@@ -1,5 +1,5 @@
 {
-  "name": "@revivejs/vue-google-maps",
+  "name": "@stackline/vue-google-maps",
   "version": "3.0.0",
   "description": "A maintained Vue 3 wrapper for the Google Maps JavaScript API with versioned docs, advanced markers, marker clustering, and migration-friendly components.",
   "keywords": [
@@ -47,6 +47,9 @@
   "scripts": {
     "build": "tsup",
     "clean": "rm -rf dist docs/vue-2 docs/vue-3",
+    "pack:check": "npm run build && npm pack --dry-run",
+    "release:line": "npm run build && node scripts/release-vue-line.js",
+    "release:sequence": "npm run build && node scripts/release-vue-sequence.js",
     "docs:install:vue-2": "cd docs-src/vue-2 && npm install",
     "docs:install:vue-3": "cd docs-src/vue-3 && npm install",
     "build:docs:vue-2": "cd docs-src/vue-2 && npm run build",
@@ -56,6 +59,9 @@
   },
   "peerDependencies": {
     "vue": ">=3.0.0 <4.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "@googlemaps/markerclusterer": "2.6.2",

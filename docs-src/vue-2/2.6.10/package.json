@@ -1,0 +1,13 @@
+{
+  "name": "@stackline/vue-google-maps-docs-vue2-2-6-10",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "validate": "node ./stackline-validate.mjs"
+  },
+  "dependencies": {
+    "vue": "2.6.10",
+    "@stackline/vue-google-maps": "file:../../.."
+  },
+  "devDependencies": {}
+}

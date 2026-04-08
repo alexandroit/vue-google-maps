@@ -24,7 +24,7 @@ export function getDefaultGoogleMapsLibraries() {
 
 export function loadGoogleMapsApi(options: GoogleMapsApiLoadOptions = {}): Promise<typeof google> {
   if (typeof window === 'undefined' || typeof document === 'undefined') {
-    return Promise.reject(new Error('@revivejs/vue-google-maps can only load the Google Maps API in a browser environment.'));
+    return Promise.reject(new Error('@stackline/vue-google-maps can only load the Google Maps API in a browser environment.'));
   }
 
   if (window.google?.maps) {
@@ -37,7 +37,7 @@ export function loadGoogleMapsApi(options: GoogleMapsApiLoadOptions = {}): Promi
   if (loaderPromise) {
     if (loadedOptionsKey && loadedOptionsKey !== nextKey) {
       console.warn(
-        '@revivejs/vue-google-maps only loads the Google Maps JavaScript API once per page. ' +
+        '@stackline/vue-google-maps only loads the Google Maps JavaScript API once per page. ' +
           'Ignoring subsequent loader options and reusing the first loaded configuration.'
       );
     }

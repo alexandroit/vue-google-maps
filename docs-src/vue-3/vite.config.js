@@ -7,7 +7,7 @@ export default defineConfig({
   base: './',
   resolve: {
     alias: {
-      '@revivejs/vue-google-maps': resolve(__dirname, '../../src/index.ts'),
+      '@stackline/vue-google-maps': resolve(__dirname, '../../src/index.ts'),
       '@docs-meta': resolve(__dirname, './src/docs-meta.ts'),
       vue: resolve(__dirname, 'node_modules/vue/dist/vue.esm-bundler.js')
     },

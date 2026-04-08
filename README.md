@@ -1,19 +1,19 @@
-# @revivejs/vue-google-maps
+# @stackline/vue-google-maps
 
 > A maintained Vue 3 wrapper for the Google Maps JavaScript API with versioned demos, advanced markers, marker clustering, shapes, layers, directions, and geocoding.
 
-[![npm version](https://img.shields.io/npm/v/@revivejs/vue-google-maps.svg?style=flat-square)](https://www.npmjs.com/package/@revivejs/vue-google-maps)
-[![npm downloads](https://img.shields.io/npm/dt/@revivejs/vue-google-maps.svg?style=flat-square)](https://www.npmjs.com/package/@revivejs/vue-google-maps)
-[![license](https://img.shields.io/npm/l/@revivejs/vue-google-maps.svg?style=flat-square)](https://github.com/alexandroit/vue-google-maps/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/@stackline/vue-google-maps.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/vue-google-maps)
+[![npm downloads](https://img.shields.io/npm/dt/@stackline/vue-google-maps.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/vue-google-maps)
+[![license](https://img.shields.io/npm/l/@stackline/vue-google-maps.svg?style=flat-square)](https://github.com/alexandroit/vue-google-maps/blob/main/LICENSE)
 [![Vue 2 + Vue 3](https://img.shields.io/badge/Vue-2.7%20%2B%203.x-brightgreen?style=flat-square&logo=vuedotjs)](https://vuejs.org)
 
-**[Documentation & Live Demos](https://alexandroit.github.io/vue-google-maps/)** | **[npm](https://www.npmjs.com/package/@revivejs/vue-google-maps)** | **[Issues](https://github.com/alexandroit/vue-google-maps/issues)** | **[Repository](https://github.com/alexandroit/vue-google-maps)**
+**[Documentation & Live Demos](https://alexandroit.github.io/vue-google-maps/)** | **[npm](https://www.npmjs.com/package/@stackline/vue-google-maps)** | **[Issues](https://github.com/alexandroit/vue-google-maps/issues)** | **[Repository](https://github.com/alexandroit/vue-google-maps)**
 
 **Latest version:** `3.0.0`
 
 ## Why this library?
 
-`@revivejs/vue-google-maps` follows the same practical mental model that teams already use with Google Maps in Angular and vanilla JavaScript:
+`@stackline/vue-google-maps` follows the same practical mental model that teams already use with Google Maps in Angular and vanilla JavaScript:
 
 - one provider loads the Google Maps JavaScript API
 - one `<GoogleMap>` owns the native `google.maps.Map`
@@ -22,18 +22,23 @@
 
 That keeps Vue in charge of templates and reactivity while preserving the full Google Maps API underneath.
 
-## Vue Compatibility
+## Vue Version Compatibility
 
-| Package version | Vue line | Demo link |
-| :---: | :---: | :--- |
-| **3.0.0** | **Vue 3.5.x** | [Vue 3 demo](https://alexandroit.github.io/vue-google-maps/vue-3/) |
-| **2.0.0** | **Vue 2.7.x** | [Vue 2 demo](https://alexandroit.github.io/vue-google-maps/vue-2/) |
+Each package family only installs on its matching Vue family. Framework major and package major are not always the same package number, so use the package family column below.
+
+| Package family | Framework family | Peer range | Tested release window | Demo link |
+| :---: | :---: | :---: | :---: | :--- |
+| **3.x** | **Vue 3 only** | **`>=3.0.0 <4.0.0`** | **3.0.0 -> 3.5.32** | [Vue 3 family docs](https://alexandroit.github.io/vue-google-maps/vue-3/) |
+| **2.x** | **Vue 2 only** | **`>=2.0.0 <3.0.0`** | **2.0.0 -> 2.7.16** | [Vue 2 family docs](https://alexandroit.github.io/vue-google-maps/vue-2/) |
+
 
 ## Installation
 
 ```bash
-npm install @revivejs/vue-google-maps
+npm install @stackline/vue-google-maps
 ```
+
+Choose the package family from the compatibility table above. Each published family is locked to one framework major only.
 
 ## Quick Start
 
@@ -43,7 +48,7 @@ import {
   GoogleMapsProvider,
   GoogleMap,
   MapAdvancedMarker
-} from '@revivejs/vue-google-maps';
+} from '@stackline/vue-google-maps';
 
 export default Vue.extend({
   components: {

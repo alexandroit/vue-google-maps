@@ -3,7 +3,7 @@
     <section class="hero-grid">
       <article class="panel hero-copy">
         <span class="eyebrow">{{ docsMeta.badge }}</span>
-        <h1>@revivejs/vue-google-maps</h1>
+        <h1>@stackline/vue-google-maps</h1>
         <p class="lede">
           A migration-friendly Vue wrapper for the Google Maps JavaScript API with advanced markers, marker clustering,
           shapes, layers, directions, and geocoding.
@@ -393,7 +393,7 @@ import {
   MapTrafficLayer,
   MapTransitLayer,
   createClusterRenderer
-} from '@revivejs/vue-google-maps';
+} from '@stackline/vue-google-maps';
 
 const TORONTO = { lat: 43.6532, lng: -79.3832 };
 const MONTREAL = { lat: 45.5019, lng: -73.5674 };
@@ -466,13 +466,13 @@ export default {
         {
           index: 1,
           title: 'Install',
-          code: 'npm install @revivejs/vue-google-maps'
+          code: 'npm install @stackline/vue-google-maps'
         },
         {
           index: 2,
           title: 'Load the API',
           code:
-            "import { GoogleMapsProvider } from '@revivejs/vue-google-maps';\n\n<GoogleMapsProvider :api-key=\"apiKey\" :libraries=\"['marker']\">"
+            "import { GoogleMapsProvider } from '@stackline/vue-google-maps';\n\n<GoogleMapsProvider :api-key=\"apiKey\" :libraries=\"['marker']\">"
         },
         {
           index: 3,
@@ -488,7 +488,7 @@ export default {
           label: 'Basic map bootstrapping',
           description: 'The smallest working map: provider, map, and a single advanced marker.',
           code:
-            "import { GoogleMapsProvider, GoogleMap, MapAdvancedMarker } from '@revivejs/vue-google-maps';\n\n<GoogleMapsProvider :api-key=\"apiKey\" :libraries=\"['marker']\">\n  <GoogleMap :center=\"center\" :zoom=\"11\" :height=\"420\">\n    <MapAdvancedMarker :position=\"center\" />\n  </GoogleMap>\n</GoogleMapsProvider>",
+            "import { GoogleMapsProvider, GoogleMap, MapAdvancedMarker } from '@stackline/vue-google-maps';\n\n<GoogleMapsProvider :api-key=\"apiKey\" :libraries=\"['marker']\">\n  <GoogleMap :center=\"center\" :zoom=\"11\" :height=\"420\">\n    <MapAdvancedMarker :position=\"center\" />\n  </GoogleMap>\n</GoogleMapsProvider>",
           notes: ['Use this as the base shell before adding overlays or services.']
         },
         {
