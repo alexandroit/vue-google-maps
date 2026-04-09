@@ -1,0 +1,19 @@
+{
+  "packageName": "@stackline/vue-google-maps",
+  "projectRoot": "vue-google-maps/vue-google-maps",
+  "family": "vue-3",
+  "framework": "vue",
+  "exactVersion": "3.5.30",
+  "releaseRoot": "vue-google-maps/vue-google-maps/docs-src/vue-3/3.5.30",
+  "build": null,
+  "install": {
+    "success": true,
+    "command": "npm install --ignore-scripts"
+  },
+  "validate": {
+    "success": true,
+    "command": "npm run validate"
+  },
+  "success": true,
+  "generatedAt": "2026-04-09T02:04:56.906Z"
+}

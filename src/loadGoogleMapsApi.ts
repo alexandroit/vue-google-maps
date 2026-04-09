@@ -47,8 +47,8 @@ export function loadGoogleMapsApi(options: GoogleMapsApiLoadOptions = {}): Promi
   loadedOptionsKey = nextKey;
 
   loaderPromise = new Promise<typeof google>((resolve, reject) => {
-    const callbackName = '__revivejsVueGoogleMapsInit';
-    const existingScript = document.querySelector<HTMLScriptElement>('script[data-revivejs-google-maps-loader="true"]');
+    const callbackName = '__stacklineVueGoogleMapsInit';
+    const existingScript = document.querySelector<HTMLScriptElement>('script[data-stackline-google-maps-loader="true"]');
 
     if (existingScript) {
       existingScript.addEventListener('load', () => {
@@ -93,7 +93,7 @@ export function loadGoogleMapsApi(options: GoogleMapsApiLoadOptions = {}): Promi
     const script = document.createElement('script');
     script.async = true;
     script.defer = true;
-    script.dataset.revivejsGoogleMapsLoader = 'true';
+    script.dataset.stacklineGoogleMapsLoader = 'true';
     script.src = `https://maps.googleapis.com/maps/api/js?${params.toString()}`;
 
     if (normalizedOptions.nonce) {

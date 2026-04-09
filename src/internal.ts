@@ -30,9 +30,9 @@ export type MarkerClustererContextValue = {
   unregisterMarker: (marker: MarkerLike) => void;
 };
 
-export const GOOGLE_MAPS_API_CONTEXT_KEY = Symbol('revivejs-google-maps-api') as InjectionKey<GoogleMapsApiContextValue>;
-export const GOOGLE_MAP_CONTEXT_KEY = Symbol('revivejs-google-map') as InjectionKey<GoogleMapContextValue>;
-export const MARKER_ANCHOR_CONTEXT_KEY = Symbol('revivejs-google-map-anchor') as InjectionKey<MarkerAnchorContextValue>;
+export const GOOGLE_MAPS_API_CONTEXT_KEY = Symbol('stackline-google-maps-api') as InjectionKey<GoogleMapsApiContextValue>;
+export const GOOGLE_MAP_CONTEXT_KEY = Symbol('stackline-google-map') as InjectionKey<GoogleMapContextValue>;
+export const MARKER_ANCHOR_CONTEXT_KEY = Symbol('stackline-google-map-anchor') as InjectionKey<MarkerAnchorContextValue>;
 export const MARKER_CLUSTERER_CONTEXT_KEY = Symbol(
-  'revivejs-google-map-clusterer'
+  'stackline-google-map-clusterer'
 ) as InjectionKey<MarkerClustererContextValue>;

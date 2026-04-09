@@ -119,7 +119,7 @@ export const GoogleMapsProvider = defineComponent({
       h(
         'div',
         {
-          class: 'revivejs-google-maps-provider',
+          class: 'stackline-google-maps-provider',
           style: { display: 'contents' }
         },
         slotNodes(slots.default)

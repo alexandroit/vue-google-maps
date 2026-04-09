@@ -231,13 +231,13 @@ export const GoogleMap = defineComponent({
       h(
         'div',
         {
-          class: ['revivejs-google-map-shell', attrs.class],
+          class: ['stackline-google-map-shell', attrs.class],
           style: [shellStyle.value, attrs.style as Record<string, string> | undefined]
         },
         [
           h('div', {
             ref: containerRef,
-            class: 'revivejs-google-map-surface',
+            class: 'stackline-google-map-surface',
             style: {
               width: '100%',
               height: '100%'
@@ -247,7 +247,7 @@ export const GoogleMap = defineComponent({
             ? h(
                 'div',
                 {
-                  class: 'revivejs-google-map-overlay',
+                  class: 'stackline-google-map-overlay',
                   style: {
                     position: 'absolute',
                     inset: '0',
@@ -265,7 +265,7 @@ export const GoogleMap = defineComponent({
             ? h(
                 'div',
                 {
-                  class: 'revivejs-google-map-overlay',
+                  class: 'stackline-google-map-overlay',
                   style: {
                     position: 'absolute',
                     inset: '0',

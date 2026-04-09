@@ -1,0 +1,20 @@
+{
+  "packageName": "@stackline/vue-google-maps",
+  "projectRoot": "vue-google-maps/vue-google-maps",
+  "family": "vue-2",
+  "framework": "vue",
+  "exactVersion": "2.5.18",
+  "releaseRoot": "vue-google-maps/vue-google-maps/docs-src/vue-2/2.5.18",
+  "build": null,
+  "install": {
+    "success": true,
+    "command": "npm install --ignore-scripts"
+  },
+  "validate": {
+    "success": false,
+    "command": "npm run validate",
+    "output": "> @stackline/vue-google-maps-docs-vue2-2-5-18@1.0.0 validate\n> node ./stackline-validate.mjs\n\n\nfile:///tmp/stackline-release-2.5.18-fOjUVV/stackline-run-release-smoke.mjs:48\n      throw new Error(`Expected export \"${exportName}\" was not found in ${packageName}.`);\n            ^\n\nError: Expected export \"default\" was not found in @stackline/vue-google-maps.\n    at validateExpectedExports (file:///tmp/stackline-release-2.5.18-fOjUVV/stackline-run-release-smoke.mjs:48:13)\n    at validateJavascriptRelease (file:///tmp/stackline-release-2.5.18-fOjUVV/stackline-run-release-smoke.mjs:68:3)\n    at async validateRelease (file:///tmp/stackline-release-2.5.18-fOjUVV/stackline-run-release-smoke.mjs:77:5)\n    at async file:///tmp/stackline-release-2.5.18-fOjUVV/stackline-validate.mjs:6:1\n\nNode.js v20.20.2"
+  },
+  "success": false,
+  "generatedAt": "2026-04-09T02:01:32.709Z"
+}

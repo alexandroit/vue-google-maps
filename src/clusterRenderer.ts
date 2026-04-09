@@ -66,7 +66,7 @@ export function createClusterRenderer(options: CreateClusterRendererOptions = {}
 
 function createClusterElement(text: string, options: CreateClusterRendererOptions) {
   const element = document.createElement('div');
-  element.className = options.className || 'revivejs-google-cluster';
+  element.className = options.className || 'stackline-google-cluster';
   element.style.display = 'grid';
   element.style.placeItems = 'center';
   element.style.minWidth = '48px';
