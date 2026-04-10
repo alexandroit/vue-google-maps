@@ -822,15 +822,15 @@ export default {
 <style>
 :root {
   color-scheme: light;
-  --page-bg: linear-gradient(180deg, #eef6ff 0%, #fff7eb 100%);
+  --page-bg: linear-gradient(180deg, #f8f9fc 0%, #eef2f8 100%);
   --panel-bg: rgba(255, 255, 255, 0.94);
-  --panel-border: rgba(23, 50, 77, 0.12);
-  --shadow: 0 24px 60px rgba(23, 50, 77, 0.12);
-  --ink: #17324d;
-  --muted: #5a7087;
-  --brand: #c7643b;
-  --brand-dark: #143d63;
-  --chip: #eef5fb;
+  --panel-border: rgba(63, 81, 181, 0.14);
+  --shadow: 0 1px 2px rgba(33, 33, 33, 0.12), 0 18px 44px rgba(63, 81, 181, 0.08);
+  --ink: #212121;
+  --muted: #616161;
+  --brand: #3f51b5;
+  --brand-dark: #303f9f;
+  --chip: #e8eaf6;
 }
 
 * {
@@ -891,8 +891,8 @@ code {
   display: inline-flex;
   align-items: center;
   border-radius: 999px;
-  background: #143d63;
-  color: #fff;
+  background: #e8eaf6;
+  color: #3f51b5;
   padding: 7px 12px;
   font-size: 11px;
   font-weight: 700;
@@ -993,7 +993,7 @@ h3 {
 .button-primary {
   background: var(--brand);
   border-color: transparent;
-  color: #fff;
+  color: #ffffff;
 }
 
 .button-secondary {
@@ -1028,7 +1028,7 @@ h3 {
   place-items: center;
   border-radius: 999px;
   background: #1d6fb8;
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -1078,7 +1078,7 @@ h3 {
 
 .hero-marker-main {
   background: linear-gradient(180deg, #143d63 0%, #1d6fb8 100%);
-  color: #fff;
+  color: #ffffff;
 }
 
 .hero-marker-main span {
@@ -1106,8 +1106,8 @@ h3 {
 .cluster-badge {
   min-width: 52px;
   text-align: center;
-  background: #143d63;
-  color: #fff;
+  background: #e8eaf6;
+  color: #3f51b5;
   font-weight: 700;
 }
 
@@ -1143,8 +1143,8 @@ h3 {
 }
 
 .test-button.active {
-  background: #143d63;
-  color: #fff;
+  background: #e8eaf6;
+  color: #ffffff;
 }
 
 .example-panel {
@@ -1324,4 +1324,312 @@ h3 {
     gap: 12px;
   }
 }
+
+
+/* stackline-docs-refresh-2026 */
+body {
+  background:
+    radial-gradient(circle at top right, rgba(63, 81, 181, 0.14), transparent 28%),
+    radial-gradient(circle at left 18%, rgba(23, 50, 77, 0.08), transparent 26%),
+    linear-gradient(180deg, #f8f9fc 0%, #f5f7fb 44%, #eef2f8 100%);
+}
+
+.button-primary,
+.test-button.active,
+.cluster-badge,
+.step-badge {
+  background: linear-gradient(135deg, #3f51b5, #5c6bc0);
+  color: #ffffff;
+}
+
+@media (max-width: 720px) {
+  .hero-actions,
+  .example-toolbar,
+  .section-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button,
+  .button-small,
+  .test-button {
+    width: 100%;
+  }
+}
+
+
+
+/* stackline-docs-wrap-fix-2026 */
+.hero-main h1,
+.hero h1,
+.page-header h1,
+.docs-hero h1,
+article h1:first-child {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.02;
+}
+
+.hero-card,
+.panel,
+.sidebar-card,
+.demo-card,
+.preview-frame,
+.surface-card,
+.table-shell,
+.install-card,
+.copy-card,
+.card-shell,
+.showcase-card,
+.docs-card,
+.docs-panel {
+  min-width: 0;
+}
+
+.badge,
+.hero-badge,
+.version-pill,
+.release-pill {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .hero-main h1,
+  .hero h1,
+  .page-header h1,
+  .docs-hero h1,
+  article h1:first-child {
+    font-size: clamp(2rem, 11vw, 3.15rem);
+  }
+}
+
+
+
+/* stackline-docs-mobile-title-fix-2026 */
+@media (max-width: 640px) {
+  .hero-main h1,
+  .hero h1,
+  .page-header h1,
+  .docs-hero h1,
+  article h1:first-child {
+    font-size: clamp(1.7rem, 8vw, 2.65rem) !important;
+    line-height: 0.98 !important;
+    letter-spacing: -0.035em !important;
+    word-break: break-all;
+  }
+}
+
+
+
+/* stackline-docs-mobile-layout-fix-2026 */
+.hero-main h1,
+.hero-main h2,
+.hero-card h1,
+.hero-card h2,
+.hero h1,
+.hero h2,
+.page-header h1,
+.page-header h2,
+.docs-hero h1,
+.docs-hero h2,
+article h1:first-child,
+article h2:first-child {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.layout,
+.docs-layout,
+.hero,
+.hero-grid,
+.content-grid,
+.playground-shell,
+.playground__grid,
+.example-shell,
+.example-explorer,
+.quickstart-grid,
+.workbench-grid,
+.release-links,
+.cta-row,
+.controls,
+.hero-actions,
+.inline-actions,
+.playground-actions,
+.playground-preview-tabs,
+.field,
+.field.two-up,
+.sidebar,
+.sidebar-card,
+.panel,
+.demo-card,
+.playground-card,
+.playground-controls,
+.playground-preview,
+.result-card,
+.controls-card,
+.release-card,
+.api-card,
+.preview-card,
+.example-stage,
+.demo-stage,
+.docs-panel,
+.docs-card,
+.table-shell,
+.surface-card,
+.copy-card,
+.install-card,
+.card-shell,
+.hero-copy,
+.hero-setup {
+  min-width: 0;
+}
+
+.badge,
+.hero-badge,
+.version-pill,
+.release-pill,
+.meta-pill,
+.release-link {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+pre,
+.code,
+.code-block,
+.code-preview,
+.snippet pre,
+.code-card pre {
+  max-width: 100%;
+}
+
+@media (max-width: 760px) {
+  .release-links,
+  .cta-row,
+  .controls,
+  .hero-actions,
+  .inline-actions,
+  .playground-actions,
+  .toolbar,
+  .example-stage-header,
+  .playground-preview-tabs {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    align-items: stretch;
+  }
+
+  .release-link,
+  .btn,
+  .button,
+  .ghost-button,
+  button,
+  .copy-button,
+  .clear-btn {
+    width: 100%;
+  }
+
+  .playground-shell,
+  .playground__grid,
+  .example-shell,
+  .example-explorer,
+  .quickstart-grid,
+  .workbench-grid,
+  .demo-grid,
+  .api-grid,
+  .feature-grid,
+  .results-grid,
+  .control-grid,
+  .toggle-grid,
+  .meta-grid,
+  .page-grid,
+  .surface-card-grid,
+  .hero-grid,
+  .content-grid,
+  .layout,
+  .docs-layout,
+  .hero {
+    grid-template-columns: 1fr !important;
+  }
+
+  .field.two-up,
+  .playground-table-head,
+  .playground-table-row,
+  .table-head,
+  .table-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-main h1,
+  .hero-main h2,
+  .hero-card h1,
+  .hero-card h2,
+  .hero h1,
+  .hero h2,
+  .page-header h1,
+  .page-header h2,
+  .docs-hero h1,
+  .docs-hero h2,
+  article h1:first-child,
+  article h2:first-child {
+    font-size: clamp(1.55rem, 7vw, 2.35rem) !important;
+    line-height: 1.03 !important;
+    letter-spacing: -0.03em !important;
+  }
+
+  .app-shell,
+  .shell,
+  .docs-page,
+  .page-shell,
+  #app,
+  .docs-shell {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .hero-card,
+  .panel,
+  .log-panel,
+  .sidebar-card,
+  .demo-card,
+  .ref-card,
+  .release-card,
+  .demo-stage,
+  .example-stage,
+  .playground-controls,
+  .playground-preview,
+  .api-card,
+  .preview-card,
+  .surface-card,
+  .table-shell,
+  .docs-card,
+  .docs-panel {
+    padding: 18px !important;
+    border-radius: 22px;
+  }
+
+  .badge,
+  .hero-badge,
+  .version-pill,
+  .release-pill,
+  .meta-pill,
+  .release-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  pre,
+  .code,
+  .code-block,
+  .code-preview {
+    font-size: 12px;
+  }
+}
+
 </style>
