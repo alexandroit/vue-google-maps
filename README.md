@@ -7,7 +7,7 @@
 [![license](https://img.shields.io/npm/l/@stackline/vue-google-maps.svg?style=flat-square)](https://github.com/alexandroit/vue-google-maps/blob/main/LICENSE)
 [![Vue 2 + Vue 3](https://img.shields.io/badge/Vue-2.7%20%2B%203.x-brightgreen?style=flat-square&logo=vuedotjs)](https://vuejs.org)
 
-**[Documentation & Live Demos](https://alexandroit.github.io/vue-google-maps/)** | **[npm](https://www.npmjs.com/package/@stackline/vue-google-maps)** | **[Issues](https://github.com/alexandroit/vue-google-maps/issues)** | **[Repository](https://github.com/alexandroit/vue-google-maps)**
+**[Documentation & Live Demos](https://alexandro.net/docs/vue/vue-google-maps/)** | **[npm](https://www.npmjs.com/package/@stackline/vue-google-maps)** | **[Issues](https://github.com/alexandroit/vue-google-maps/issues)** | **[Repository](https://github.com/alexandroit/vue-google-maps)**
 
 **Latest version:** `3.0.0`
 
@@ -28,8 +28,8 @@ Each package family only installs on its matching Vue family. Framework major an
 
 | Package family | Framework family | Peer range | Tested release window | Demo link |
 | :---: | :---: | :---: | :---: | :--- |
-| **3.x** | **Vue 3 only** | **`>=3.0.0 <4.0.0`** | **3.0.0 -> 3.5.32** | [Vue 3 family docs](https://alexandroit.github.io/vue-google-maps/vue-3/) |
-| **2.x** | **Vue 2 only** | **`>=2.0.0 <3.0.0`** | **2.0.0 -> 2.7.16** | [Vue 2 family docs](https://alexandroit.github.io/vue-google-maps/vue-2/) |
+| **3.x** | **Vue 3 only** | **`>=3.0.0 <4.0.0`** | **3.0.0 -> 3.5.32** | [Vue 3 family docs](https://alexandro.net/docs/vue/vue-google-maps/vue-3/) |
+| **2.x** | **Vue 2 only** | **`>=2.0.0 <3.0.0`** | **2.0.0 -> 2.7.16** | [Vue 2 family docs](https://alexandro.net/docs/vue/vue-google-maps/vue-2/) |
 
 
 ## Installation
