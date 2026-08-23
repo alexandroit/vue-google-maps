@@ -4,6 +4,11 @@ All notable changes to `@stackline/vue-google-maps` are documented here.
 
 ## [Unreleased]
 
+- Updated the Vue 3 documentation app to Vue 3.5.41 and Vite 8.2, moved the
+  Vue 2 app to the latest compatible Vite 7 patch, and added reproducible
+  build and audit coverage for both lines.
+- Added a strict Vue 2 audit gate that tolerates only the unfixed upstream
+  `GHSA-5j4c-8p2g-v4jx` advisory and rejects every additional finding.
 - Moved exact-version dependency records to `package.fixture.json`, repaired
   their validators, and added an offline catalog contract to keep historical
   metadata out of active dependency alerts.

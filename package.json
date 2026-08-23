@@ -48,13 +48,14 @@
   "sideEffects": false,
   "scripts": {
     "test:fixtures": "node tools/stackline-run-release-smoke.mjs --catalog",
+    "audit:docs:vue-2": "node tools/stackline-audit-vue2-docs.mjs docs-src/vue-2",
     "build": "tsup",
     "clean": "rm -rf dist docs/vue-2 docs/vue-3",
     "pack:check": "npm run build && npm pack --dry-run",
     "release:line": "npm run build && node scripts/release-vue-line.js",
     "release:sequence": "npm run build && node scripts/release-vue-sequence.js",
-    "docs:install:vue-2": "cd docs-src/vue-2 && npm install",
-    "docs:install:vue-3": "cd docs-src/vue-3 && npm install",
+    "docs:install:vue-2": "cd docs-src/vue-2 && npm ci",
+    "docs:install:vue-3": "cd docs-src/vue-3 && npm ci",
     "build:docs:vue-2": "cd docs-src/vue-2 && npm run build",
     "build:docs:vue-3": "cd docs-src/vue-3 && npm run build",
     "build:docs": "npm run build:docs:vue-3",
@@ -75,7 +76,7 @@
     "@types/google.maps": "3.58.1",
     "tsup": "8.5.1",
     "typescript": "5.9.3",
-    "vue": "3.5.32"
+    "vue": "3.5.41"
   },
   "overrides": {
     "tsup": {

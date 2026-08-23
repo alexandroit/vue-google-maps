@@ -6,6 +6,11 @@ Security fixes are released for the maintained `@stackline/vue-google-maps`
 version lines documented in the README. Use the latest patch release available
 for the Vue line used by your application.
 
+Vue 2 is end of life upstream. Its compatibility line remains available, but
+has no compatible framework fix for `GHSA-5j4c-8p2g-v4jx`. The repository's
+selective audit gate accepts only that low-severity, unfixed finding and rejects
+all other documentation-app vulnerabilities.
+
 ## Reporting a vulnerability
 
 Report suspected vulnerabilities privately through
