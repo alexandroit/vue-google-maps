@@ -142,3 +142,12 @@ this.$refs.mainMarker.setPosition({ lat: 43.6532, lng: -79.3832 });
 - Initial Vue Google Maps wrapper line
 - Added the first versioned docs line for Vue 2
 - Wrapped maps, markers, advanced markers, clusterer, shapes, layers, directions, and geocoding
+
+## Security
+
+Report vulnerabilities privately by following [SECURITY.md](SECURITY.md). Do
+not disclose exploit details in a public issue.
+
+## License
+
+Licensed under the MIT License. See [LICENSE](LICENSE).
