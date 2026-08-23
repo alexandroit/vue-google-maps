@@ -4,6 +4,9 @@ All notable changes to `@stackline/vue-google-maps` are documented here.
 
 ## [Unreleased]
 
+- Moved exact-version dependency records to `package.fixture.json`, repaired
+  their validators, and added an offline catalog contract to keep historical
+  metadata out of active dependency alerts.
 - Refreshed vulnerable build dependencies and forced tsup's nested esbuild onto
   the patched release line.
 - Added a package-specific security policy and confidential reporting path.
