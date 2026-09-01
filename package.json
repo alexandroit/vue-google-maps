@@ -76,7 +76,7 @@
     "@types/google.maps": "3.58.1",
     "tsup": "8.5.1",
     "typescript": "5.9.3",
-    "vue": "3.5.41"
+    "vue": "3.5.42"
   },
   "overrides": {
     "tsup": {
